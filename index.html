@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Zadužnice i Razdužnice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <header>
+                <div class="dashboard-title">Zadužnice i razdužnice</div>
+                <div class="tabs">
+                    <button class="tab active" onclick="showTab('zaduznice')">Zadužnice</button>
+                    <button class="tab" onclick="showTab('razduznice')">Razdužnice</button>
+                </div>
+            </header>
+            <section class="user-selection">
+                <select>
+                    <option>Arnela Sokolić</option>
+                    <option>Amina Spahić</option>
+                </select>
+            </section>
+            <section id="zaduznice" class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategorija</th>
+                            <th>Oprema</th>
+                            <th>Zaduženo</th>
+                            <th>Datum zaduženja</th>
+                            <th>Ime i prezime odgovorne osobe</th>
+                            <th>Zapisnik</th>
+                            <th>Komentar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" value="Obuća"></td>
+                            <td><input type="text" value="Čizme"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2024-01-09"></td>
+                            <td><input type="text" value="Arnela Sokolić"></td>
+                            <td><input type="text" value="12345"></td>
+                            <td><textarea style="resize: none;">Nema komentara</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Tehnika"></td>
+                            <td><input type="text" value="Računar"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2024-01-09"></td>
+                            <td><input type="text" value="Arnela Sokolić"></td>
+                            <td><input type="text" value="67890"></td>
+                            <td><textarea style="resize: none;">U dobrom stanju</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Tehnika"></td>
+                            <td><input type="text" value="Projektor"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2024-02-15"></td>
+                            <td><input type="text" value="Amina Spahić"></td>
+                            <td><input type="text" value="54321"></td>
+                            <td><textarea style="resize: none;">Nema komentara</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Obuća"></td>
+                            <td><input type="text" value="Cipele"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2024-03-20"></td>
+                            <td><input type="text" value="Amina Spahić"></td>
+                            <td><input type="text" value="98765"></td>
+                            <td><textarea style="resize: none;">U dobrom stanju</textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="razduznice" class="table-section hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategorija</th>
+                            <th>Oprema</th>
+                            <th>Razduženo</th>
+                            <th>Vraćeno u ispravnom stanju</th>
+                            <th>Ime i prezime odgovorne osobe</th>
+                            <th>Zapisnik</th>
+                            <th>Komentar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" value="Obuća"></td>
+                            <td><input type="text" value="Čizme"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="text" value="Arnela Sokolić"></td>
+                            <td><input type="text" value="12345"></td>
+                            <td><textarea style="resize: none;">Nema komentara</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Tehnika"></td>
+                            <td><input type="text" value="Računar"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="text" value="Arnela Sokolić"></td>
+                            <td><input type="text" value="67890"></td>
+                            <td><textarea style="resize: none;">U dobrom stanju</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Tehnika"></td>
+                            <td><input type="text" value="Projektor"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="text" value="Amina Spahić"></td>
+                            <td><input type="text" value="54321"></td>
+                            <td><textarea style="resize: none;">Nema komentara</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Obuća"></td>
+                            <td><input type="text" value="Cipele"></td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Odaberi</option>
+                                    <option>Da</option>
+                                    <option>Ne</option>
+                                </select>
+                            </td>
+                            <td><input type="text" value="Amina Spahić"></td>
+                            <td><input type="text" value="98765"></td>
+                            <td><textarea style="resize: none;">U dobrom stanju</textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <footer class="footer-section">
+                <!-- Futer za Zadužnice -->
+                <section id="zaduznice-footer" class="footer-content">
+                    <label>
+                        <input type="checkbox">
+                        <span class="checkbox-text">Ovim potpisom potvrđujem da su sve unesene informacije u vezi sa Zadužnicom u segmentu moje odgovornosti za navedenog radnika vjerodostojne, tačne i potpune.</span>
+                    </label>
+                </section>
+
+                <!-- Futer za Razdužnice -->
+                <section id="razduznice-footer" class="footer-content hidden">
+                    <div class="checkbox-section">
+                        <label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">Ovim potpisom potvrđujem da su sve unesene informacije u vezi sa Razdužnicom u segmentu moje odgovornosti za navedenog radnika, vjerodostojne, tačne i potpune.</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">HR potvrđuje da je završeno razduženje tehničke imovine radnika.</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">HR potvrđuje da je završeno razduženje tehničke imovine radnika.</span>
+                        </label>
+                    </div>
+                    <div class="button-section">
+                        <button class="sign">Potpiši</button>
+                        <button class="print">Printaj</button>
+                    </div>
+                </section>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            var zaduznice = document.getElementById('zaduznice');
+            var razduznice = document.getElementById('razduznice');
+            var zaduzniceFooter = document.getElementById('zaduznice-footer');
+            var razduzniceFooter = document.getElementById('razduznice-footer');
+            
+            if (tabName === 'zaduznice') {
+                zaduznice.classList.remove('hidden');
+                razduznice.classList.add('hidden');
+                zaduzniceFooter.classList.remove('hidden');
+                razduzniceFooter.classList.add('hidden');
+            } else {
+                zaduznice.classList.add('hidden');
+                razduznice.classList.remove('hidden');
+                zaduzniceFooter.classList.add('hidden');
+                razduzniceFooter.classList.remove('hidden');
+            }
+
+            var buttons = document.querySelectorAll('.tab');
+            buttons.forEach(button => button.classList.remove('active'));
+            document.querySelector(`button[onclick="showTab('${tabName}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
