@@ -1,1 +1,1 @@
-# tabela1
+Tabela za zadužnice i razdužnice 
